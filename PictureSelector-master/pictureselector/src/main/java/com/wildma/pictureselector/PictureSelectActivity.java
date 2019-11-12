@@ -120,7 +120,7 @@ public class PictureSelectActivity extends Activity {
         }
         String picturePath = PictureSelectUtils.onActivityResult(this, requestCode, resultCode, data, mCropEnabled, mCropWidth, mCropHeight, mRatioWidth, mRatioHeight);
         if (!TextUtils.isEmpty(picturePath)) {
-            selectResultListener.ResultData(picturePath);
+      
             Intent intent = new Intent();
             intent.putExtra(PictureSelector.PICTURE_PATH, picturePath);
             setResult(RESULT_OK, intent);
